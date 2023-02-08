@@ -7,7 +7,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:paddingBottom="100dp"
+        android:paddingBottom="15dp"
         android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/imageView"
@@ -165,6 +165,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="4dp"
@@ -174,17 +175,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="24dp"
                     android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginRight="12dp"
+                    android:layout_marginBottom="24dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/image1"
                     tools:srcCompat="@tools:sample/avatars" />
@@ -193,15 +194,25 @@
                     android:id="@+id/imageView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="24dp"
                     android:layout_marginLeft="12dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginRight="24dp"
+                    android:layout_marginBottom="24dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/image2"
                     tools:srcCompat="@tools:sample/avatars" />
             </LinearLayout>
         </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Add To Favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
